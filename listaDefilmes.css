@@ -1,0 +1,140 @@
+*{
+    margin:0;
+}
+ @font-face {
+       font-family: 'invisible_killer';
+       src: url('fontes/invisibl.ttf') format('truetype');
+       font-weight: normal;
+       font-style:normal;
+}
+   h1{
+    
+       font-family:'invisible_killer', sans-serif;
+       font-size: 30px ;
+       font-weight:700;
+       color: rgb(169, 166, 170);
+       padding: 10px;
+   
+   }
+
+
+
+
+
+ #catalogo {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:100px;
+ }
+ #catalogo1{
+  margin-top: 30px;
+  display:flex;
+  gap:150px;
+ }
+ #catalogo2{
+    display:flex;
+    gap:90px;
+ }
+ .compartimento{
+    backdrop-filter: blur(20px);
+    border-radius:12px;
+    display: flex;
+    flex-direction:column ;
+    align-items: center;
+    animation: happy 10.5s ease-in-out infinite both;
+    gap: 10px;
+}
+ .poster{
+    width: 200px;
+    margin: 10px;
+    border-color:black;
+    border-style: outset;
+    border-radius:15px;
+    border-width:5px;
+ }
+ #catalogo h2{
+    font-family:'invisible_killer', sans-serif;
+    color:black;
+    font-size: 20px;
+    margin:10px;
+ }
+ body{
+    display:flex;
+    width:98.9vw;
+    height:160vh;   
+}   
+main{  
+display:flex;
+background-image: url(imagens/cosmonerd-prey-1.png);
+background-repeat: no-repeat;
+background-size:205%;
+width:100%;
+height:100%;
+margin-top:7.8%;
+overflow-y: hidden;
+justify-content: center;
+}
+
+header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    background-color:black;
+    width: 100%;
+    height:15%;
+    z-index:9999;
+    position:fixed;
+    border-radius:1px;
+    border-style:outset;
+    border-width: 0px 0px 5px 0px ;
+    border-color:rgb(112, 111, 112);
+}
+.caixa{
+    margin:70px;
+}
+.caixa a{
+    font-family:'invisible_killer', sans-serif;
+    color: rgb(169, 166, 170);
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+.caixa a p{
+    font-family:'invisible_killer', sans-serif;
+    color: rgb(169, 166, 170);
+    font-size: 18px;
+    text-decoration: none;
+    
+}
+
+.caixa a p:hover{
+    color:green;
+    zoom: 115%;
+   
+}
+nav{
+    display: flex;
+    
+}
+
+ #menu{
+    color:green;
+    zoom:115%;
+    animation: happy 0.9s ease-in-out infinite both;
+}
+
+@keyframes happy{
+    0%{
+        transform:scale(1);
+    }
+    50%{
+        transform:scale(1.1);
+    }
+    100%{
+        transform:scale(1);
+    }
+
+
+
+ }
